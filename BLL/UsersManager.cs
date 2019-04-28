@@ -34,7 +34,7 @@ namespace UFB.BLL
 		/// <summary>
 		/// 增加一条数据
 		/// </summary>
-		public int  Add(UFB.Model.Users model)
+		public bool  Add(UFB.Model.Users model)
 		{
 			return dal.Add(model);
 		}

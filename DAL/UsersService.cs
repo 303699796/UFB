@@ -42,7 +42,7 @@ namespace UFB.DAL
 		/// <summary>
 		/// 增加一条数据
 		/// </summary>
-		public int Add(UFB.Model.Users model)
+		public bool Add(UFB.Model.Users model)
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into Users(");
@@ -63,11 +63,11 @@ namespace UFB.DAL
 			object obj = DbHelperSQL.GetSingle(strSql.ToString(),parameters);
 			if (obj == null)
 			{
-				return 0;
+				return false;
 			}
 			else
 			{
-				return Convert.ToInt32(obj);
+				return true;
 			}
 		}
 		/// <summary>
