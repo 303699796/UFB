@@ -133,11 +133,19 @@
     <Content Include="Feedback\Modify.aspx" />
     <Content Include="Feedback\Show.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\avatar-1.png" />
+    <Content Include="Images\code2.JPG" />
     <Content Include="Images\top1.gif" />
+    <Content Include="Images\用户反馈处理系统1.PNG" />
+    <Content Include="Images\用户反馈处理系统2.PNG" />
+    <Content Include="Images\用户头像.jpg" />
+    <Content Include="List\Index.aspx" />
+    <Content Include="List\WebForm1.aspx" />
     <Content Include="Login\AdminLogin.aspx" />
     <Content Include="Login\AdminRegister.aspx" />
     <Content Include="Login\UserLogin.aspx" />
     <Content Include="Login\UserRegister.aspx" />
+    <Content Include="Message\ApplyMessage.aspx" />
     <Content Include="Question\Add.aspx" />
     <Content Include="Question\List.aspx" />
     <Content Include="Question\Modify.aspx" />
@@ -151,6 +159,7 @@
     <Content Include="Users\Modify.aspx" />
     <Content Include="Users\Show.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Apply_Message\Add.aspx.cs">
@@ -258,6 +267,13 @@
     <Compile Include="Distribution\Show.aspx.designer.cs">
       <DependentUpon>Show.aspx</DependentUpon>
     </Compile>
+    <Compile Include="feedback.Master.cs">
+      <DependentUpon>feedback.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback.Master.designer.cs">
+      <DependentUpon>feedback.Master</DependentUpon>
+    </Compile>
     <Compile Include="Feedback\Add.aspx.cs">
       <DependentUpon>Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -288,6 +304,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="List\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="List\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="List\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="List\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login\AdminLogin.aspx.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
@@ -323,6 +353,13 @@
     </Compile>
     <Compile Include="MasterPage.master.designer.cs">
       <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="Message\ApplyMessage.aspx.cs">
+      <DependentUpon>ApplyMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Message\ApplyMessage.aspx.designer.cs">
+      <DependentUpon>ApplyMessage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Question\Add.aspx.cs">
@@ -409,6 +446,13 @@
     <Compile Include="Users\Show.aspx.designer.cs">
       <DependentUpon>Show.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
@@ -474,6 +518,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\UFB.Web.dll.config" />
+    <Content Include="feedback.Master" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

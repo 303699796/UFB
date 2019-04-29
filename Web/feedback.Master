@@ -1,15 +1,20 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="UFB.Web.MasterPage" %>
-<%@ Register Src="~/Controls/copyright.ascx" TagName="copyright" TagPrefix="uc1" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="feedback.master.cs" Inherits="UFB.Web.feedback" %>
 
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<!DOCTYPE html>
+
+<html>
 <head runat="server">
-    <title>模板页</title>
-  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+   
      <link rel="stylesheet" href="../bootstrap/vendor/simple-line-icons/css/simple-line-icons.css"/>
     <link rel="stylesheet" href="../bootstrap/vendor/font-awesome/css/fontawesome-all.min.css"/>
      <link rel="stylesheet" href="../bootstrap/css/styles.css"/>
-      <link href="/style.css" type="text/css" rel="stylesheet" />
     <style type="text/css">
         .auto-style1 {
             position: relative;
@@ -25,11 +30,14 @@
             padding-right: 15px;
         }
     </style>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
 </head>
-                
-   <body class="sidebar-fixed header-fixed">
+
+           
+     
+  
+
+
+<body class="sidebar-fixed header-fixed">
     <form id="form2" runat="server" onsubmit="return false">
 <div class="page-wrapper">
     <div class="page-header">
@@ -39,15 +47,19 @@
             </a>
 
             <a class="navbar-brand" href="#">
-                <img src="../Images/用户反馈处理系统2.PNG" alt="logo"/>
+              <%--  <img src="Images/用户反馈处理系统2.PNG" alt="logo"/>--%>
                 
             </a>
 
-            <a href="#" class="btn btn-link sidebar-toggle d-md-down-none">
+            <%--<a href="#" class="btn btn-link sidebar-toggle d-md-down-none" style="float:left">
                 <i class="fa fa-bars"></i>
-            </a>
-
-            <ul class="navbar-nav ml-auto">
+            </a>--%>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+              
+           <%-- <ul class="navbar-nav ml-auto">
                 <li class="nav-item d-md-down-none">
                     <a href="#">
                         <i class="fa fa-bell"></i>
@@ -96,7 +108,7 @@
                     </div>
                           
                 </li>
-            </ul>
+            </ul>--%>
         </nav>
     </div>
 
@@ -178,87 +190,25 @@
             </nav>
         </div>
           </div>    
-
-
+    </div>
+        
+    
          <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="card p-4">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                     <span class="font-weight-light">昨日反馈量</span>
-                                    <br /><br />
-                                    <span class="h4 d-block font-weight-normal mb-2">54</span>
-                                   
-                                </div>
+                   <div>
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
 
-                                <div class="h2 text-muted">
-                                    <i class="icon icon-people"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card p-4">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="font-weight-light">昨日已处理</span>
-                                    <br /><br />
-                                    <span class="h4 d-block font-weight-normal mb-2">$32,400</span>
-                                    
-                                </div>
-
-                                <div class="h2 text-muted">
-                                    <i class="icon icon-wallet"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card p-4">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="font-weight-light">今日反馈量</span><br /><br />
-
-                                    <span class="h4 d-block font-weight-normal mb-2">900</span>
-                                    
-                                </div>
-
-                                <div class="h2 text-muted">
-                                    <i class="icon icon-cloud-download"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card p-4">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="font-weight-light">今日已处理</span><br /><br />
-                                    <span class="h4 d-block font-weight-normal mb-2">32s</span>
-                                    
-                                </div>
-
-                                <div class="h2 text-muted">
-                                    <i class="icon icon-clock"></i>
-                                </div>
-                            </div>
+        </div>
                         </div>
                     </div>
                 </div>
 
-                    </div>
-                </div>                         
-    </div>
+                
 
-           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                                </asp:ContentPlaceHolder>
-    <uc1:copyright ID="copyright1" runat="server" />
-    </form>
+   </form>  
+
  <script src="../bootstrap/vendor/jquery/jquery.min.js"></script>
 <script src="../bootstrap/vendor/popper.js/popper.min.js"></script>
 <script src="../bootstrap/vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -267,3 +217,4 @@
 <script src="../bootstrap/js/demo.js"></script>
 </body>
 </html>
+

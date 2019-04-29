@@ -10,7 +10,7 @@
 namespace UFB.Web {
     
     
-    public partial class MasterPage {
+    public partial class feedback {
         
         /// <summary>
         /// head 控件。
@@ -40,12 +40,12 @@ namespace UFB.Web {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
         
         /// <summary>
-        /// copyright1 控件。
+        /// ContentPlaceHolder2 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::UFB.Web.Controls.CopyRight1 copyright1;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder2;
     }
 }

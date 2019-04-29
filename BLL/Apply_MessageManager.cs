@@ -34,9 +34,10 @@ namespace UFB.BLL
 		/// <summary>
 		/// 增加一条数据
 		/// </summary>
-		public int  Add(UFB.Model.Apply_Message model)
+		public bool  Add(UFB.Model.Apply_Message model)
 		{
-			return dal.Add(model);
+            //return dal.Add(model);
+            return dal.Add(model);
 		}
 
 		/// <summary>

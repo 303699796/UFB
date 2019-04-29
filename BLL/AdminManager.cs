@@ -26,7 +26,7 @@ namespace UFB.BLL
 		/// <summary>
 		/// 是否存在该记录
 		/// </summary>
-		public bool Exists(int ID)
+		public bool Exists(string adminName, int ID)
 		{
 			return dal.Exists(ID);
 		}

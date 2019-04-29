@@ -15,7 +15,7 @@ namespace UFB.Web.Category
         
         
         
-		UFB.BLL.CategoryManager bll = new UFB.BLL.CategoryManager();
+		BLL.CategoryManager bll = new BLL.CategoryManager();
 
         protected void Page_Load(object sender, EventArgs e)
         {

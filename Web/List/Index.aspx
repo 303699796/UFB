@@ -1,15 +1,17 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="UFB.Web.MasterPage" %>
-<%@ Register Src="~/Controls/copyright.ascx" TagName="copyright" TagPrefix="uc1" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="UFB.Web.List.Index" %>
 
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>模板页</title>
-  
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>首页</title>
      <link rel="stylesheet" href="../bootstrap/vendor/simple-line-icons/css/simple-line-icons.css"/>
     <link rel="stylesheet" href="../bootstrap/vendor/font-awesome/css/fontawesome-all.min.css"/>
      <link rel="stylesheet" href="../bootstrap/css/styles.css"/>
-      <link href="/style.css" type="text/css" rel="stylesheet" />
     <style type="text/css">
         .auto-style1 {
             position: relative;
@@ -25,12 +27,9 @@
             padding-right: 15px;
         }
     </style>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
 </head>
-                
-   <body class="sidebar-fixed header-fixed">
-    <form id="form2" runat="server" onsubmit="return false">
+<body class="sidebar-fixed header-fixed">
+    <form id="form1" runat="server" onsubmit="return false">
 <div class="page-wrapper">
     <div class="page-header">
         <nav class="navbar page-header">
@@ -47,7 +46,7 @@
                 <i class="fa fa-bars"></i>
             </a>
 
-            <ul class="navbar-nav ml-auto">
+           <%-- <ul class="navbar-nav ml-auto">
                 <li class="nav-item d-md-down-none">
                     <a href="#">
                         <i class="fa fa-bell"></i>
@@ -96,7 +95,7 @@
                     </div>
                           
                 </li>
-            </ul>
+            </ul>--%>
         </nav>
     </div>
 
@@ -252,13 +251,11 @@
                 </div>
 
                     </div>
-                </div>                         
-    </div>
+                </div>
 
-           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                                </asp:ContentPlaceHolder>
-    <uc1:copyright ID="copyright1" runat="server" />
-    </form>
+
+   </form>  
+
  <script src="../bootstrap/vendor/jquery/jquery.min.js"></script>
 <script src="../bootstrap/vendor/popper.js/popper.min.js"></script>
 <script src="../bootstrap/vendor/bootstrap/js/bootstrap.min.js"></script>

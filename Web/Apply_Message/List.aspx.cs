@@ -8,6 +8,8 @@ using System.Data;
 using Maticsoft.Common;
 using System.Drawing;
 using LTP.Accounts.Bus;
+using UFB.BLL;
+
 namespace UFB.Web.Apply_Message
 {
     public partial class List : Page
@@ -15,7 +17,7 @@ namespace UFB.Web.Apply_Message
         
         
         
-		UFB.BLL.Apply_MessageManager bll = new UFB.BLL.Apply_MessageManager();
+		BLL.Apply_MessageManager bll = new BLL.Apply_MessageManager();
 
         protected void Page_Load(object sender, EventArgs e)
         {
