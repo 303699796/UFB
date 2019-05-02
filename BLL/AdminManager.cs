@@ -34,7 +34,7 @@ namespace UFB.BLL
 		/// <summary>
 		/// 增加一条数据
 		/// </summary>
-		public int  Add(UFB.Model.Admin model)
+		public bool  Add(UFB.Model.Admin model)
 		{
 			return dal.Add(model);
 		}
@@ -143,7 +143,7 @@ namespace UFB.BLL
 		/// <summary>
 		/// 获得数据列表
 		/// </summary>
-		public DataSet GetAllList()
+		public DataSet GetList()
 		{
 			return GetList("");
 		}

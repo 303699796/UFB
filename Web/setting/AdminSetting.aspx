@@ -1,35 +1,18 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="UFB.Web.List.Index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminSetting.aspx.cs" Inherits="UFB.Web.setting.AdminSetting" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-
+<head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>首页</title>
+    <title>管理员设置</title>
      <link rel="stylesheet" href="../bootstrap/vendor/simple-line-icons/css/simple-line-icons.css"/>
     <link rel="stylesheet" href="../bootstrap/vendor/font-awesome/css/fontawesome-all.min.css"/>
      <link rel="stylesheet" href="../bootstrap/css/styles.css"/>
-    <style type="text/css">
-        .auto-style1 {
-            position: relative;
-            width: 100%;
-            min-height: 1px;
-            -webkit-box-flex: 0;
-            -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-            max-width: 50%;
-            left: 9px;
-            top: -12px;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-    </style>
 </head>
 <body class="sidebar-fixed header-fixed">
-    <form id="form1" runat="server" onsubmit="return false">
+    <form id="form2" runat="server">
 <div class="page-wrapper">
     <div class="page-header">
         <nav class="navbar page-header">
@@ -38,15 +21,14 @@
             </a>
 
             <a class="navbar-brand" href="#">
-                <img src="../Images/用户反馈处理系统2.PNG" alt="logo"/>
-                
+                <img src="./imgs/logo.png" alt="logo">
             </a>
 
             <a href="#" class="btn btn-link sidebar-toggle d-md-down-none">
                 <i class="fa fa-bars"></i>
             </a>
 
-           <%-- <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item d-md-down-none">
                     <a href="#">
                         <i class="fa fa-bell"></i>
@@ -59,12 +41,11 @@
                         <i class="fa fa-envelope-open"></i>
                         <span class="badge badge-pill badge-danger">5</span>
                     </a>
-                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
 
-                <li class="nav-item dropdown" style="left: -32px; top: -10px">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="../Images/用户头像.jpg" class="avatar avatar-sm" alt="logo">
-                        
+                        <img src="./imgs/avatar-1.png" class="avatar avatar-sm" alt="logo">
                         <span class="small ml-1 d-md-down-none">John Smith</span>
                     </a>
 
@@ -93,9 +74,8 @@
                             <i class="fa fa-lock"></i> Logout
                         </a>
                     </div>
-                          
                 </li>
-            </ul>--%>
+            </ul>
         </nav>
     </div>
 
@@ -176,84 +156,57 @@
                 
             </nav>
         </div>
-          </div>    
 
-
-         <div class="content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card p-4">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                     <span class="font-weight-light">昨日反馈量</span>
-                                    <br /><br />
-                                    <span class="h4 d-block font-weight-normal mb-2">54</span>
-                                   
-                                </div>
-
-                                <div class="h2 text-muted">
-                                    <i class="icon icon-people"></i>
-                                </div>
-                            </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header bg-light" style="width:1200px;height:50px;border:none">
+                         <h5>管理员设置</h5> 
                         </div>
-                    </div>
+                       
 
-                    <div class="col-md-3">
-                        <div class="card p-4">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="font-weight-light">昨日已处理</span>
-                                    <br /><br />
-                                    <span class="h4 d-block font-weight-normal mb-2">$32,400</span>
-                                    
-                                </div>
-
-                                <div class="h2 text-muted">
-                                    <i class="icon icon-wallet"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card p-4">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="font-weight-light">今日反馈量</span><br /><br />
-
-                                    <span class="h4 d-block font-weight-normal mb-2">900</span>
-                                    
-                                </div>
-
-                                <div class="h2 text-muted">
-                                    <i class="icon icon-cloud-download"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card p-4">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="font-weight-light">今日已处理</span><br /><br />
-                                    <span class="h4 d-block font-weight-normal mb-2">32s</span>
-                                    
-                                </div>
-
-                          
-                                <div class="h2 text-muted">
-                                    <i class="icon icon-clock"></i>
-                                </div>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
 
-                    </div>
-                </div>
+            </div>
 
+
+            <asp:GridView ID="GridView1" runat="server" class="tab-content" style="width: 100%;text-align:center;word-break :break-all;word-wrap:break-word " RowStyle-Height="50px"
+                OnRowDeleting="GridView1_RowDeleting"  OnRowDataBound="GridView1_RowDataBound" OnRowEditing="GridView1_RowEditing"
+                OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowUpdating="GridView1_RowUpdating" AutoGenerateColumns="False" DataKeyNames="ID" EnableModelValidation="True">
+                 <Columns>
+                       <asp:TemplateField HeaderText ="ID">
+                        <ItemTemplate>
+                            <asp:Label ID="LabelID" runat="server" Text='<%#Bind("ID")%>'></asp:Label>
+                          </ItemTemplate>
+                    </asp:TemplateField>
+
+
+                    <asp:BoundField DataField="adminName" HeaderText="管理员" ReadOnly="True" />
+                    <asp:BoundField DataField="department" HeaderText="部门" ReadOnly="True" />
+                    <asp:BoundField DataField="job" HeaderText="职位" ReadOnly="True" />
+                      <asp:TemplateField HeaderText ="权限">
+                     <ItemTemplate>
+                            <asp:TextBox ID="txbpermission" runat="server" BorderStyle="None" style="text-align:center"  Text='<%#Bind("permission")%>'></asp:TextBox>                         
+                          </ItemTemplate>
+                    </asp:TemplateField>
+                <%--   <asp:BoundField DataField="permission" HeaderText="权限" />--%>
+
+                       <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" EditText="编辑权限" />
+
+                      </Columns>
+
+<RowStyle Height="50px"></RowStyle>
+
+            </asp:GridView>
+              </div>
+    </div>
+</div>
+
+
+          
    </form>  
 
  <script src="../bootstrap/vendor/jquery/jquery.min.js"></script>

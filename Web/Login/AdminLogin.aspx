@@ -60,6 +60,7 @@
         </div>
     </div>
 </div>
+   
  </form>  
 
  <script src="../bootstrap/vendor/jquery/jquery.min.js"></script>

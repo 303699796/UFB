@@ -23,9 +23,19 @@ namespace UFB.Web.Login
             apply_Message.permission = DropDownListPermission.SelectedItem.Text;
             apply_Message.isRead = "0";
 
+            Model.Admin admin = new Model.Admin();
+            admin.adminName= txbUserName.Text;
+            admin.adminPassword = txbPassword1.Text;
+            admin.department= txbDepartment.Text;
+            admin.job= txbJob.Text;
+            admin.permission= DropDownListPermission.SelectedItem.Text;
+
+            BLL.AdminManager admin1 = new BLL.AdminManager();
+            bool bo1 = admin1.Add(admin);
+
             BLL.Apply_MessageManager apply_Message1 = new BLL.Apply_MessageManager();
             bool bo = apply_Message1.Add(apply_Message);
-            if (bo == true)
+            if ((bo == true)&&(bo1==true))
             {
                 Response.Write("<script language=javascript>alert('申请成功！请耐心等待管理员同意')</script>");
             }

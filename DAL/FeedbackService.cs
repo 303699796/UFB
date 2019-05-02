@@ -259,6 +259,8 @@ namespace UFB.DAL
 			return DbHelperSQL.Query(strSql.ToString());
 		}
 
+   
+
 		/// <summary>
 		/// 获得前几行数据
 		/// </summary>
@@ -327,7 +329,7 @@ namespace UFB.DAL
 			return DbHelperSQL.Query(strSql.ToString());
 		}
 
-		/*
+        /*
 		/// <summary>
 		/// 分页获取数据列表
 		/// </summary>
@@ -352,10 +354,33 @@ namespace UFB.DAL
 			return DbHelperSQL.RunProcedure("UP_GetRecordByPage",parameters,"ds");
 		}*/
 
-		#endregion  BasicMethod
-		#region  ExtensionMethod
+        public DataSet Search(string strWhere)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select feedbackID,UserID,feedbackTime,category,Info,contact,image,isInvalid,solutionState where Info like%无法%");
+            strSql.Append(" FROM Feedback ");
+            if (strWhere.Trim() != "")
+            {
+                strSql.Append(" where " + strWhere);
+            }
+            return DbHelperSQL.Query(strSql.ToString());
 
-		#endregion  ExtensionMethod
-	}
+        }
+   //     StringBuilder strSql = new StringBuilder();
+   //     strSql.Append("select feedbackID,UserID,feedbackTime,category,Info,contact,image,isInvalid,solutionState ");
+			//strSql.Append(" FROM Feedback ");
+			//if(strWhere.Trim()!="")
+			//{
+			//	strSql.Append(" where "+strWhere);
+			//}
+			//return DbHelperSQL.Query(strSql.ToString());
+
+         //    feedbackID, UserID, feedbackTime, category, Info, contact, image, isInvalid, solutionState
+
+        #endregion  BasicMethod
+        #region  ExtensionMethod
+
+        #endregion  ExtensionMethod
+    }
 }
 

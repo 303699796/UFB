@@ -77,22 +77,22 @@ namespace UFB.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("update Question set ");
-			strSql.Append("category=@category,");
+			//strSql.Append("category=@category,");
 			strSql.Append("question=@question,");
 			strSql.Append("solution=@solution,");
 			strSql.Append("time=@time");
 			strSql.Append(" where questionID=@questionID");
 			SqlParameter[] parameters = {
-					new SqlParameter("@category", SqlDbType.VarChar,64),
+					//new SqlParameter("@category", SqlDbType.VarChar,64),
 					new SqlParameter("@question", SqlDbType.VarChar,128),
 					new SqlParameter("@solution", SqlDbType.VarChar,128),
 					new SqlParameter("@time", SqlDbType.SmallDateTime),
 					new SqlParameter("@questionID", SqlDbType.Int,4)};
-			parameters[0].Value = model.category;
-			parameters[1].Value = model.question;
-			parameters[2].Value = model.solution;
-			parameters[3].Value = model.time;
-			parameters[4].Value = model.questionID;
+			//parameters[0].Value = model.category;
+			parameters[0].Value = model.question;
+			parameters[1].Value = model.solution;
+			parameters[2].Value = model.time;
+			parameters[3].Value = model.questionID;
 
 			int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)

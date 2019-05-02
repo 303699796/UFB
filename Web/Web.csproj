@@ -70,6 +70,10 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\Add.aspx" />
+    <Content Include="Admin\List.aspx" />
+    <Content Include="Admin\Modify.aspx" />
+    <Content Include="Admin\Show.aspx" />
     <Content Include="Apply_Message\Add.aspx" />
     <Content Include="Apply_Message\List.aspx" />
     <Content Include="Apply_Message\Modify.aspx" />
@@ -140,12 +144,12 @@
     <Content Include="Images\用户反馈处理系统2.PNG" />
     <Content Include="Images\用户头像.jpg" />
     <Content Include="List\Index.aspx" />
-    <Content Include="List\WebForm1.aspx" />
+    <Content Include="List\ViewList.aspx" />
     <Content Include="Login\AdminLogin.aspx" />
     <Content Include="Login\AdminRegister.aspx" />
     <Content Include="Login\UserLogin.aspx" />
     <Content Include="Login\UserRegister.aspx" />
-    <Content Include="Message\ApplyMessage.aspx" />
+    <Content Include="Message\ApplyMseeage.aspx" />
     <Content Include="Question\Add.aspx" />
     <Content Include="Question\List.aspx" />
     <Content Include="Question\Modify.aspx" />
@@ -154,14 +158,47 @@
     <Content Include="Reply\List.aspx" />
     <Content Include="Reply\Modify.aspx" />
     <Content Include="Reply\Show.aspx" />
+    <Content Include="setting\AdminSetting.aspx" />
+    <Content Include="setting\CategorySetting.aspx" />
+    <Content Include="setting\Category_Setting.aspx" />
+    <Content Include="setting\QuestionSetting.aspx" />
+    <Content Include="setting\Question_Setting.aspx" />
     <Content Include="Users\Add.aspx" />
     <Content Include="Users\List.aspx" />
     <Content Include="Users\Modify.aspx" />
     <Content Include="Users\Show.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Modify.aspx.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Modify.aspx.designer.cs">
+      <DependentUpon>Modify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Show.aspx.cs">
+      <DependentUpon>Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Show.aspx.designer.cs">
+      <DependentUpon>Show.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Apply_Message\Add.aspx.cs">
       <DependentUpon>Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -267,11 +304,18 @@
     <Compile Include="Distribution\Show.aspx.designer.cs">
       <DependentUpon>Show.aspx</DependentUpon>
     </Compile>
-    <Compile Include="feedback.Master.cs">
+    <Compile Include="List\ViewList.aspx.cs">
+      <DependentUpon>ViewList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="List\ViewList.aspx.designer.cs">
+      <DependentUpon>ViewList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\feedback.Master.cs">
       <DependentUpon>feedback.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="feedback.Master.designer.cs">
+    <Compile Include="master\feedback.Master.designer.cs">
       <DependentUpon>feedback.Master</DependentUpon>
     </Compile>
     <Compile Include="Feedback\Add.aspx.cs">
@@ -312,13 +356,6 @@
     <Compile Include="List\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="List\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="List\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Login\AdminLogin.aspx.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -347,19 +384,26 @@
     <Compile Include="Login\UserRegister.aspx.designer.cs">
       <DependentUpon>UserRegister.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MasterPage.master.cs">
+    <Compile Include="master\MasterPage.master.cs">
       <DependentUpon>MasterPage.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MasterPage.master.designer.cs">
+    <Compile Include="master\MasterPage.master.designer.cs">
       <DependentUpon>MasterPage.master</DependentUpon>
     </Compile>
-    <Compile Include="Message\ApplyMessage.aspx.cs">
-      <DependentUpon>ApplyMessage.aspx</DependentUpon>
+    <Compile Include="master\UserFeedback.Master.cs">
+      <DependentUpon>UserFeedback.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Message\ApplyMessage.aspx.designer.cs">
-      <DependentUpon>ApplyMessage.aspx</DependentUpon>
+    <Compile Include="master\UserFeedback.Master.designer.cs">
+      <DependentUpon>UserFeedback.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Message\ApplyMseeage.aspx.cs">
+      <DependentUpon>ApplyMseeage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Message\ApplyMseeage.aspx.designer.cs">
+      <DependentUpon>ApplyMseeage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Question\Add.aspx.cs">
@@ -418,6 +462,41 @@
     <Compile Include="Reply\Show.aspx.designer.cs">
       <DependentUpon>Show.aspx</DependentUpon>
     </Compile>
+    <Compile Include="setting\AdminSetting.aspx.cs">
+      <DependentUpon>AdminSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="setting\AdminSetting.aspx.designer.cs">
+      <DependentUpon>AdminSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="setting\CategorySetting.aspx.cs">
+      <DependentUpon>CategorySetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="setting\CategorySetting.aspx.designer.cs">
+      <DependentUpon>CategorySetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="setting\Category_Setting.aspx.cs">
+      <DependentUpon>Category_Setting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="setting\Category_Setting.aspx.designer.cs">
+      <DependentUpon>Category_Setting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="setting\QuestionSetting.aspx.cs">
+      <DependentUpon>QuestionSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="setting\QuestionSetting.aspx.designer.cs">
+      <DependentUpon>QuestionSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="setting\Question_Setting.aspx.cs">
+      <DependentUpon>Question_Setting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="setting\Question_Setting.aspx.designer.cs">
+      <DependentUpon>Question_Setting.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Users\Add.aspx.cs">
       <DependentUpon>Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -446,12 +525,12 @@
     <Compile Include="Users\Show.aspx.designer.cs">
       <DependentUpon>Show.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm2.aspx.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm2.aspx.designer.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -483,13 +562,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MasterPage.master" />
+    <Content Include="master\MasterPage.master" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Admin\" />
     <Folder Include="Components\" />
     <Folder Include="obj\Debug\" />
     <Folder Include="System\" />
+    <Folder Include="Userside\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Themes\BlueTheme\Control.skin" />
@@ -518,7 +597,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\UFB.Web.dll.config" />
-    <Content Include="feedback.Master" />
+    <Content Include="master\feedback.Master" />
+    <Content Include="master\UserFeedback.Master" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

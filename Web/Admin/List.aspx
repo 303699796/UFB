@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Admin" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="List.aspx.cs" Inherits="UFB.Web.Admin.List" %>
+﻿<%@ Page Title="Admin" Language="C#" MasterPageFile="~/master/MasterPage.master" AutoEventWireup="true" CodeBehind="List.aspx.cs" Inherits="UFB.Web.Admin.List" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 <script language="javascript" src="/js/CheckBox.js" type="text/javascript"></script>
 </asp:Content>

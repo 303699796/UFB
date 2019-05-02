@@ -1,44 +1,19 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="feedback.master.cs" Inherits="UFB.Web.feedback" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Question_Setting.aspx.cs" Inherits="UFB.Web.setting.Question_Setting" %>
 
 <!DOCTYPE html>
 
-<html>
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-   
+    <title>管理员设置</title>
      <link rel="stylesheet" href="../bootstrap/vendor/simple-line-icons/css/simple-line-icons.css"/>
     <link rel="stylesheet" href="../bootstrap/vendor/font-awesome/css/fontawesome-all.min.css"/>
      <link rel="stylesheet" href="../bootstrap/css/styles.css"/>
-    <style type="text/css">
-        .auto-style1 {
-            position: relative;
-            width: 100%;
-            min-height: 1px;
-            -webkit-box-flex: 0;
-            -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-            max-width: 50%;
-            left: 9px;
-            top: -12px;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-    </style>
 </head>
-
-           
-     
-  
-
-
 <body class="sidebar-fixed header-fixed">
-    <form id="form2" runat="server" onsubmit="return false">
+    <form id="form2" runat="server">
 <div class="page-wrapper">
     <div class="page-header">
         <nav class="navbar page-header">
@@ -47,19 +22,14 @@
             </a>
 
             <a class="navbar-brand" href="#">
-              <%--  <img src="Images/用户反馈处理系统2.PNG" alt="logo"/>--%>
-                
+                <img src="./imgs/logo.png" alt="logo">
             </a>
 
-            <%--<a href="#" class="btn btn-link sidebar-toggle d-md-down-none" style="float:left">
+            <a href="#" class="btn btn-link sidebar-toggle d-md-down-none">
                 <i class="fa fa-bars"></i>
-            </a>--%>
-            <div>
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-            </div>
-              
-           <%-- <ul class="navbar-nav ml-auto">
+            </a>
+
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item d-md-down-none">
                     <a href="#">
                         <i class="fa fa-bell"></i>
@@ -72,12 +42,11 @@
                         <i class="fa fa-envelope-open"></i>
                         <span class="badge badge-pill badge-danger">5</span>
                     </a>
-                </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
 
-                <li class="nav-item dropdown" style="left: -32px; top: -10px">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="../Images/用户头像.jpg" class="avatar avatar-sm" alt="logo">
-                        
+                        <img src="./imgs/avatar-1.png" class="avatar avatar-sm" alt="logo">
                         <span class="small ml-1 d-md-down-none">John Smith</span>
                     </a>
 
@@ -106,9 +75,8 @@
                             <i class="fa fa-lock"></i> Logout
                         </a>
                     </div>
-                          
                 </li>
-            </ul>--%>
+            </ul>
         </nav>
     </div>
 
@@ -189,24 +157,66 @@
                 
             </nav>
         </div>
-          </div>    
-    </div>
-        
-    
-         <div class="content">
-            <div class="container-fluid">
-                <div class="row">
-                   <div>
-             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-            </asp:ContentPlaceHolder>
 
-        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header bg-light" style="width:1200px;height:50px;border:none">
+                         <h5>管理员设置</h5> 
                         </div>
+                       
+
+                       
                     </div>
                 </div>
 
-                
+            </div>
+            <asp:GridView ID="GridView1" runat="server" class="tab-content" style="width: 100%;text-align:center;word-break :break-all;word-wrap:break-word " RowStyle-Height="50px"
+                OnRowDeleting="GridView1_RowDeleting"  OnRowDataBound="GridView1_RowDataBound" OnRowEditing="GridView1_RowEditing" OnRowCancelingEdit="GridView1_RowCancelingEdit" OnRowUpdating="GridView1_RowUpdating" AutoGenerateColumns="False" DataKeyNames="questionID" EnableModelValidation="True">
+                    <Columns>
+            <asp:TemplateField HeaderText ="管理员ID">
+                        <ItemTemplate>
+                            <asp:Label ID="LabelquestionID" runat="server" Text='<%#Bind("questionID")%>'></asp:Label>
+                          </ItemTemplate>
+                    </asp:TemplateField>
 
+                    <%--<asp:TemplateField HeaderText ="问题类别">
+                        <ItemTemplate>
+                            <asp:Label ID="Labelcategory" runat="server" Text='<%#Bind("category")%>'></asp:Label>                         
+                          </ItemTemplate>
+                    </asp:TemplateField>--%>
+                          <asp:BoundField DataField="category" HeaderText="问题类别" ReadOnly="True" />
+
+                            <asp:TemplateField HeaderText ="问题描述">
+                        <ItemTemplate>
+                            <asp:TextBox ID="txbQuestion" runat="server" BorderStyle="None" style="text-align:center"  Text='<%#Bind("question")%>'></asp:TextBox>                         
+                          </ItemTemplate>
+                    </asp:TemplateField>
+
+                           <asp:TemplateField HeaderText ="解决方案">
+                        <ItemTemplate>
+                            <asp:TextBox ID="txbSolution" runat="server" BorderStyle="None" style="text-align:center" Text='<%#Bind("solution")%>'></asp:TextBox>                         
+                          </ItemTemplate>
+                    </asp:TemplateField>
+            <asp:BoundField DataField="time" HeaderText="添加时间" ReadOnly="True" />
+
+
+
+         <%--   <asp:BoundField DataField="category" HeaderText="问题分类" />
+            <asp:BoundField DataField="question" HeaderText="问题详情" />
+            <asp:BoundField DataField="solution" HeaderText="解决方案" />
+            <asp:BoundField DataField="time" HeaderText="添加时间" />--%>
+                         <asp:CommandField ShowDeleteButton="True"  ShowEditButton="True" />
+                         </Columns>
+                    <RowStyle />
+</asp:GridView>
+              </div>
+    </div>
+</div>
+
+
+          
    </form>  
 
  <script src="../bootstrap/vendor/jquery/jquery.min.js"></script>
@@ -217,4 +227,3 @@
 <script src="../bootstrap/js/demo.js"></script>
 </body>
 </html>
-

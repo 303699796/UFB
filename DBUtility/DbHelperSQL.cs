@@ -278,7 +278,13 @@ namespace Maticsoft.DBUtility
                     throw e;
                 }
             }
-        }        
+        }
+
+        public static DataTable ExecSelect(string cmdText, CommandType text)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// 执行多条SQL语句，实现数据库事务。
         /// </summary>

@@ -42,7 +42,7 @@ namespace UFB.DAL
 		/// <summary>
 		/// 增加一条数据
 		/// </summary>
-		public int Add(UFB.Model.Admin model)
+		public bool Add(UFB.Model.Admin model)
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("insert into Admin(");
@@ -65,11 +65,11 @@ namespace UFB.DAL
 			object obj = DbHelperSQL.GetSingle(strSql.ToString(),parameters);
 			if (obj == null)
 			{
-				return 0;
+				return false;
 			}
 			else
 			{
-				return Convert.ToInt32(obj);
+                return true;
 			}
 		}
 		/// <summary>
@@ -79,25 +79,25 @@ namespace UFB.DAL
 		{
 			StringBuilder strSql=new StringBuilder();
 			strSql.Append("update Admin set ");
-			strSql.Append("adminName=@adminName,");
-			strSql.Append("adminPassword=@adminPassword,");
-			strSql.Append("department=@department,");
-			strSql.Append("job=@job,");
+			//strSql.Append("adminName=@adminName,");
+			//strSql.Append("adminPassword=@adminPassword,");
+			//strSql.Append("department=@department,");
+			//strSql.Append("job=@job,");
 			strSql.Append("permission=@permission");
 			strSql.Append(" where ID=@ID");
 			SqlParameter[] parameters = {
-					new SqlParameter("@adminName", SqlDbType.VarChar,64),
-					new SqlParameter("@adminPassword", SqlDbType.VarChar,64),
-					new SqlParameter("@department", SqlDbType.VarChar,64),
-					new SqlParameter("@job", SqlDbType.VarChar,64),
+					//new SqlParameter("@adminName", SqlDbType.VarChar,64),
+					//new SqlParameter("@adminPassword", SqlDbType.VarChar,64),
+					//new SqlParameter("@department", SqlDbType.VarChar,64),
+					//new SqlParameter("@job", SqlDbType.VarChar,64),
 					new SqlParameter("@permission", SqlDbType.VarChar,16),
 					new SqlParameter("@ID", SqlDbType.Int,4)};
-			parameters[0].Value = model.adminName;
-			parameters[1].Value = model.adminPassword;
-			parameters[2].Value = model.department;
-			parameters[3].Value = model.job;
-			parameters[4].Value = model.permission;
-			parameters[5].Value = model.ID;
+			//parameters[0].Value = model.adminName;
+			//parameters[1].Value = model.adminPassword;
+			//parameters[2].Value = model.department;
+			//parameters[3].Value = model.job;
+			parameters[0].Value = model.permission;
+			parameters[1].Value = model.ID;
 
 			int rows=DbHelperSQL.ExecuteSql(strSql.ToString(),parameters);
 			if (rows > 0)

@@ -169,11 +169,15 @@ namespace UFB.BLL
 		//{
 			//return dal.GetList(PageSize,PageIndex,strWhere);
 		//}
+        public DataSet CategorySearch(string strWhere)
+        {
+            return dal.Search(strWhere);
+        }
 
-		#endregion  BasicMethod
-		#region  ExtensionMethod
+        #endregion  BasicMethod
+        #region  ExtensionMethod
 
-		#endregion  ExtensionMethod
-	}
+        #endregion  ExtensionMethod
+    }
 }
 
