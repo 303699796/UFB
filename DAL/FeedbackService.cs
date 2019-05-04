@@ -288,7 +288,7 @@ namespace UFB.DAL
 		public int GetRecordCount(string strWhere)
 		{
 			StringBuilder strSql=new StringBuilder();
-			strSql.Append("select count(1) FROM Feedback ");
+			strSql.Append("select count(*) FROM Feedback where feedbackTime=DateTime.Now");
 			if(strWhere.Trim()!="")
 			{
 				strSql.Append(" where "+strWhere);

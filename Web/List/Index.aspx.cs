@@ -12,6 +12,10 @@ namespace UFB.Web.List
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            Model.Feedback feedback1 = new Model.Feedback();
+            BLL.FeedbackManager feedback2 = new BLL.FeedbackManager();
+          
+
         }
     }
 }

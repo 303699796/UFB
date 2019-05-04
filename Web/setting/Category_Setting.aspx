@@ -205,12 +205,13 @@
             <div class="modal-body">
                  <asp:Label ID="Label1" runat="server" Text="请输入新增问题分类"></asp:Label>
                 &nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="TextBox1" runat="server" Width="300px" Height="30px"></asp:TextBox>
+                <asp:TextBox ID="txbAdd" runat="server" Width="300px" Height="30px"></asp:TextBox>
             </div>
 
             <div class="modal-footer" >
                 <button type="button" class="btn btn-link"  data-dismiss="modal">取消</button>
-                <button type="button" class="btn btn-primary" >保存</button>
+               <%-- <button  type="button" class="btn btn-primary" onclick=""  >保存</button>--%>
+                <asp:Button ID="BntSave" type="button" runat="server"  class="btn btn-primary" OnClick="BntSave_Click"  Text="保存" />
             </div>
         </div>
     </div>

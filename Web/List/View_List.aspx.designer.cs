@@ -10,7 +10,16 @@
 namespace UFB.Web.List {
     
     
-    public partial class ViewList {
+    public partial class View_List {
+        
+        /// <summary>
+        /// form2 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
         
         /// <summary>
         /// btn_Reply 控件。
@@ -76,6 +85,15 @@ namespace UFB.Web.List {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_Category;
         
         /// <summary>
+        /// btn_Star 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Star;
+        
+        /// <summary>
         /// txbStar 控件。
         /// </summary>
         /// <remarks>
@@ -85,22 +103,31 @@ namespace UFB.Web.List {
         protected global::System.Web.UI.WebControls.TextBox txbStar;
         
         /// <summary>
-        /// Calendar1 控件。
+        /// Label1 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// btn_Search 控件。
+        /// btn_End 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_Search;
+        protected global::System.Web.UI.WebControls.Button btn_End;
+        
+        /// <summary>
+        /// txbEnd 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txbEnd;
         
         /// <summary>
         /// txbSearch 控件。
@@ -112,6 +139,33 @@ namespace UFB.Web.List {
         protected global::System.Web.UI.WebControls.TextBox txbSearch;
         
         /// <summary>
+        /// btn_Search 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Search;
+        
+        /// <summary>
+        /// Calendar_Star 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Calendar_Star;
+        
+        /// <summary>
+        /// Calendar_End 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Calendar_End;
+        
+        /// <summary>
         /// GridView1 控件。
         /// </summary>
         /// <remarks>
@@ -119,14 +173,5 @@ namespace UFB.Web.List {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView1;
-        
-        /// <summary>
-        /// SqlDataSource_FeedbackList 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_FeedbackList;
     }
 }

@@ -21,6 +21,8 @@
            <asp:SqlDataSource ID="SqlDataSource_Category" runat="server" ConnectionString="Data Source=.;Initial Catalog=UFB;Integrated Security=True" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [category] FROM [Category]"></asp:SqlDataSource>
            &nbsp;&nbsp;
        <asp:TextBox ID="txbStar" runat="server" Text="请选择开始日期" ></asp:TextBox>
+                
+                <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
               
 
 

@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master/feedback.Master" AutoEventWireup="true" CodeBehind="CategorySetting.aspx.cs" Inherits="UFB.Web.setting.CategorySetting" %>
+﻿
+<%@ Page Title="" Language="C#" MasterPageFile="~/master/feedback.Master" AutoEventWireup="true" CodeBehind="CategorySetting.aspx.cs" Inherits="UFB.Web.setting.CategorySetting" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

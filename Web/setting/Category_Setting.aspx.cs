@@ -80,5 +80,23 @@ namespace UFB.Web.setting
 
         }
 
+        protected void BntSave_Click(object sender, EventArgs e)
+        {
+            Model.Category category3 = new Model.Category();
+            BLL.CategoryManager category4 = new BLL.CategoryManager();
+            //users.userName = txbUserName.Text;
+            category3.category = txbAdd.Text;
+            bool bo = category4.Add(category3);
+            if (bo == true)
+            {
+                // Response.Redirect("~/Default.aspx");
+                Bind();
+            }
+            else
+            {
+                Response.Write("<script language=javascript>alert('添加失败！')");
+            }
+
+        }
     }
 }

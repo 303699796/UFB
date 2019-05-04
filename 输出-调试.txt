@@ -1,0 +1,51 @@
+﻿“iisexpress.exe”(CLR v2.0.50727: DefaultDomain): 已加载“C:\WINDOWS\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: DefaultDomain): 已加载“C:\WINDOWS\assembly\GAC_32\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: DefaultDomain): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: DefaultDomain): 已加载“C:\WINDOWS\assembly\GAC_MSIL\mscorlib.resources\2.0.0.0_zh-CHS_b77a5c561934e089\mscorlib.resources.dll”。模块已生成，不包含符号。
+“iisexpress.exe”(CLR v2.0.50727: DefaultDomain): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: DefaultDomain): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: DefaultDomain): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.Web.RegularExpressions\2.0.0.0__b03f5f7f11d50a3a\System.Web.RegularExpressions.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: DefaultDomain): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.Design\2.0.0.0__b03f5f7f11d50a3a\System.Design.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: DefaultDomain): 已加载“C:\WINDOWS\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: DefaultDomain): 已加载“C:\WINDOWS\assembly\GAC_32\System.Transactions\2.0.0.0__b77a5c561934e089\System.Transactions.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: DefaultDomain): 已加载“C:\WINDOWS\assembly\GAC_32\System.EnterpriseServices\2.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: DefaultDomain): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: Domain 17): 已加载“C:\WINDOWS\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_32\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.Web.RegularExpressions\2.0.0.0__b03f5f7f11d50a3a\System.Web.RegularExpressions.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.Design\2.0.0.0__b03f5f7f11d50a3a\System.Design.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_32\System.Transactions\2.0.0.0__b77a5c561934e089\System.Transactions.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_32\System.EnterpriseServices\2.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_MSIL\Microsoft.JScript\8.0.0.0__b03f5f7f11d50a3a\Microsoft.JScript.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.Web.Mobile\2.0.0.0__b03f5f7f11d50a3a\System.Web.Mobile.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\Users\Weijie\AppData\Local\Temp\Temporary ASP.NET Files\root\ba3c2388\9a6c7bf5\assembly\dl3\b1dea083\00036c73_2739cf01\LTP.Accounts.DLL”。模块已生成，不包含符号。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\Users\Weijie\AppData\Local\Temp\Temporary ASP.NET Files\root\ba3c2388\9a6c7bf5\assembly\dl3\4454b146\00309d74_2739cf01\Maticsoft.Common.DLL”。模块已生成，不包含符号。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\Users\Weijie\AppData\Local\Temp\Temporary ASP.NET Files\root\ba3c2388\9a6c7bf5\assembly\dl3\04574cb3\00309d74_2739cf01\Microsoft.Web.UI.WebControls.DLL”。模块已生成，不包含符号。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\Users\Weijie\AppData\Local\Temp\Temporary ASP.NET Files\root\ba3c2388\9a6c7bf5\assembly\dl3\4831d301\00036c73_2739cf01\MySql.Data.DLL”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\Users\Weijie\AppData\Local\Temp\Temporary ASP.NET Files\root\ba3c2388\9a6c7bf5\assembly\dl3\fe2eb03f\00036c73_2739cf01\System.Data.SQLite.DLL”。模块已生成，不包含符号。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\Users\Weijie\AppData\Local\Temp\Temporary ASP.NET Files\root\ba3c2388\9a6c7bf5\assembly\dl3\2267960a\0005444a_8601d501\UFB.BLL.DLL”。已加载符号。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\Users\Weijie\AppData\Local\Temp\Temporary ASP.NET Files\root\ba3c2388\9a6c7bf5\assembly\dl3\dcb210fc\f38d214a_8601d501\UFB.DAL.DLL”。已加载符号。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\Users\Weijie\AppData\Local\Temp\Temporary ASP.NET Files\root\ba3c2388\9a6c7bf5\assembly\dl3\d82d00c2\23b9bc30_c5ffd401\UFB.DBUtility.DLL”。已加载符号。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\Users\Weijie\AppData\Local\Temp\Temporary ASP.NET Files\root\ba3c2388\9a6c7bf5\assembly\dl3\9ebdc469\d627e6d9_10ffd401\UFB.Model.DLL”。已加载符号。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\Users\Weijie\AppData\Local\Temp\Temporary ASP.NET Files\root\ba3c2388\9a6c7bf5\assembly\dl3\f3e67feb\a759bb1f_8d01d501\UFB.Web.DLL”。已加载符号。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.Runtime.Serialization\3.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.IdentityModel\3.0.0.0__b77a5c561934e089\System.IdentityModel.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.ServiceModel\3.0.0.0__b77a5c561934e089\System.ServiceModel.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.ServiceModel.Web\3.5.0.0__31bf3856ad364e35\System.ServiceModel.Web.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.WorkflowServices\3.5.0.0__31bf3856ad364e35\System.WorkflowServices.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.resources\2.0.0.0_zh-CHS_b77a5c561934e089\System.resources.dll”。模块已生成，不包含符号。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\Users\Weijie\AppData\Local\Temp\Temporary ASP.NET Files\root\ba3c2388\9a6c7bf5\App_global.asax.qdqhrifa.dll”。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_MSIL\SMDiagnostics\3.0.0.0__b77a5c561934e089\SMDiagnostics.dll”。已跳过加载符号。模块进行了优化，并且调试器选项“仅我的代码”已启用。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“A_6bf15957_127b_4a02_85e2_b9d2774c4048”。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“M_6bf15957_127b_4a02_85e2_b9d2774c4048”。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\WINDOWS\assembly\GAC_MSIL\System.Web.resources\2.0.0.0_zh-CHS_b03f5f7f11d50a3a\System.Web.resources.dll”。模块已生成，不包含符号。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\Users\Weijie\AppData\Local\Temp\Temporary ASP.NET Files\root\ba3c2388\9a6c7bf5\App_Web_2bfdqrhl.dll”。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\Users\Weijie\AppData\Local\Temp\Temporary ASP.NET Files\root\ba3c2388\9a6c7bf5\App_Web_uk94yd41.dll”。
+“iisexpress.exe”(CLR v2.0.50727: /LM/W3SVC/4/ROOT-16-132013469724468713): 已加载“C:\Users\Weijie\AppData\Local\Temp\Temporary ASP.NET Files\root\ba3c2388\9a6c7bf5\App_Web_vylrbweg.dll”。
+程序“[6684] iisexpress.exe”已退出，返回值为 0 (0x0)。

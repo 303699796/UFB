@@ -145,6 +145,7 @@
     <Content Include="Images\用户头像.jpg" />
     <Content Include="List\Index.aspx" />
     <Content Include="List\ViewList.aspx" />
+    <Content Include="List\View_List.aspx" />
     <Content Include="Login\AdminLogin.aspx" />
     <Content Include="Login\AdminRegister.aspx" />
     <Content Include="Login\UserLogin.aspx" />
@@ -310,6 +311,13 @@
     </Compile>
     <Compile Include="List\ViewList.aspx.designer.cs">
       <DependentUpon>ViewList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="List\View_List.aspx.cs">
+      <DependentUpon>View_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="List\View_List.aspx.designer.cs">
+      <DependentUpon>View_List.aspx</DependentUpon>
     </Compile>
     <Compile Include="master\feedback.Master.cs">
       <DependentUpon>feedback.Master</DependentUpon>
